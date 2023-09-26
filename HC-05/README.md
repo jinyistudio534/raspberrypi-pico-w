@@ -9,6 +9,7 @@
 
 ![藍牙模組(HC05、HC06)常見的指令使用教學](https://blog.cavedu.com/2017/10/18/hc05-hc06/)
 
-[[https://1.bp.blogspot.com/-t3jsYbDSj8I/YCMNWpV6bjI/AAAAAAAAXE8/8ZxqsCD8vLgkcbIJ8myW3X1_uZHBQxsVgCLcBGAsYHQ/w640-h416/pico_pair_HC05x2_bbx.png]]
+![image](https://github.com/jinyistudio534/raspberrypi-pico-w/assets/121013147/00d504cf-ec94-4718-80e4-c1ed210160cd)
+
 
 
