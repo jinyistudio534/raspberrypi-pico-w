@@ -10,4 +10,10 @@ master1.py 中使用接線參考圖
 ![image](https://github.com/jinyistudio534/raspberrypi-pico-w/assets/121013147/00d504cf-ec94-4718-80e4-c1ed210160cd)
 
 
+HC-05 is the best Bluetooth device that uses a UART communication protocol.
+![HC-05 Bluetooth Module](https://microcontrollerslab.com/hc-05-bluetooth-module-pinout-examples-arduino-applications/)
+![image](https://github.com/jinyistudio534/raspberrypi-pico-w/assets/121013147/204d23c1-f00d-414a-ad21-5bb2d6bf39d2)
+
+
+
 
