@@ -1,0 +1,228 @@
+[
+    {
+        "id": "179f76db88edd1cc",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "466ccb1b18143926",
+        "type": "serial request",
+        "z": "179f76db88edd1cc",
+        "name": "",
+        "serial": "8e9a02fa66f6e67e",
+        "x": 560,
+        "y": 320,
+        "wires": [
+            [
+                "0f7dcedcb73ed321"
+            ]
+        ]
+    },
+    {
+        "id": "0f7dcedcb73ed321",
+        "type": "debug",
+        "z": "179f76db88edd1cc",
+        "name": "debug 38",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 685,
+        "y": 320,
+        "wires": [],
+        "l": false
+    },
+    {
+        "id": "5b88b5f959933033",
+        "type": "inject",
+        "z": "179f76db88edd1cc",
+        "name": "RED",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "RED",
+        "payloadType": "str",
+        "x": 210,
+        "y": 260,
+        "wires": [
+            [
+                "f036d80d20d9e7ca"
+            ]
+        ]
+    },
+    {
+        "id": "6be5f3c8e6981c79",
+        "type": "inject",
+        "z": "179f76db88edd1cc",
+        "name": "GREEN",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "GRE",
+        "payloadType": "str",
+        "x": 210,
+        "y": 320,
+        "wires": [
+            [
+                "f036d80d20d9e7ca"
+            ]
+        ]
+    },
+    {
+        "id": "62f22c702dadea0f",
+        "type": "inject",
+        "z": "179f76db88edd1cc",
+        "name": "BLUE",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "BLU",
+        "payloadType": "str",
+        "x": 210,
+        "y": 380,
+        "wires": [
+            [
+                "f036d80d20d9e7ca"
+            ]
+        ]
+    },
+    {
+        "id": "f036d80d20d9e7ca",
+        "type": "function",
+        "z": "179f76db88edd1cc",
+        "name": "function 31",
+        "func": "// msg.payload = Buffer.from('123',\"ascii\")\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 395,
+        "y": 320,
+        "wires": [
+            [
+                "466ccb1b18143926"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "38e6d58938a2cc8e",
+        "type": "inject",
+        "z": "179f76db88edd1cc",
+        "name": "FORWARD",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "FOR",
+        "payloadType": "str",
+        "x": 230,
+        "y": 460,
+        "wires": [
+            [
+                "de0d1fc85a7f61f4"
+            ]
+        ]
+    },
+    {
+        "id": "de0d1fc85a7f61f4",
+        "type": "function",
+        "z": "179f76db88edd1cc",
+        "name": "function 32",
+        "func": "// msg.payload = Buffer.from('123',\"ascii\")\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 395,
+        "y": 500,
+        "wires": [
+            [
+                "466ccb1b18143926"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "d73ca5733e3a8fd2",
+        "type": "inject",
+        "z": "179f76db88edd1cc",
+        "name": "REVERSE",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "REV",
+        "payloadType": "str",
+        "x": 220,
+        "y": 520,
+        "wires": [
+            [
+                "de0d1fc85a7f61f4"
+            ]
+        ]
+    },
+    {
+        "id": "8e9a02fa66f6e67e",
+        "type": "serial-port",
+        "serialport": "COM20",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "0x0d",
+        "responsetimeout": "3000"
+    }
+]
